@@ -1142,21 +1142,21 @@ def home(state: State) -> Page:
             Header("Choose your mood"),
             SelectBox(
                 "mood",
-                ["Any", "Happy", "Sad", "Relaxing", "Energetic"],
+                ["Any", "Happy", "Sad", "Relaxing", "Energetic", "Love"],
                 default_value="Any"
                 ),
-            
-            Header("Choosing your activity"),
+
+            Header("Choose your activity"),
             SelectBox(
                 "activity",
-                ["Any", "Studying", "Working Out", "Driving", "Cleaning"],
+                ["Any", "Studying", "Working Out", "Driving", "Cleaning", "Chilling"],
                 default_value="Any"
                 ),
-            
-            Header("Choosing your genre"),
+
+            Header("Choose your genre"),
             SelectBox(
                 "genre",
-                ["Any", "Pop", "R&B", "KPop", "Rap"],
+                ["Any", "Pop", "R&B", "KPop", "Rap", "Alternative"],
                 default_value="Any"
                 ),
             
@@ -1295,19 +1295,19 @@ def add_song(state: State) -> Page:
         "Choose the mood:",
         SelectBox(
             "mood",
-            ["Happy", "Sad", "Relaxing", "Energetic"]
+            ["Happy", "Sad", "Relaxing", "Energetic", "Love"]
         ),
 
         "Choose the activity:",
         SelectBox(
             "activity",
-            ["Studying", "Working Out", "Driving", "Cleaning"]
+            ["Studying", "Working Out", "Driving", "Cleaning", "Chilling"]
         ),
 
         "Choose the genre:",
         SelectBox(
             "genre",
-            ["Pop", "R&B", "KPop", "Rap"]
+            ["Pop", "R&B", "KPop", "Rap", "Alternative"]
         ),
 
         Button("Add Song", "save_song"),
